@@ -1,0 +1,23 @@
+python --version
+
+brew install pyenv
+pyenv install 3.9.13
+pyenv local 3.9.13
+
+deactivate
+/Users/yvonne/.pyenv/versions/3.9.13/bin/python -m venv venv
+source venv/bin/activate
+
+############################################################## python -m venv venv
+############################################################## source venv/bin/activate
+
+pip install --upgrade pip
+
+pip install numpy==1.24.4
+pip install scipy==1.11.4
+pip install matplotlib==3.7.1
+pip install tensorflow==2.14.0
+
+########## run:
+python model-art-tf2.py
+
